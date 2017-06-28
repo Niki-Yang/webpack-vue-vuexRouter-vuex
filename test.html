@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style type="text/css" rel="stylesheet">
+    html{
+      height: 100%;
+    }
+    body{
+      height: 100%;
+      margin: 0;
+      font-family: 'Helvetica','STHeiti';
+    }
+    header{
+      height: 48px;
+      display: flex;
+      align-items: center;
+      border-top: 2px solid #eb7350;
+      box-shadow: 0 0 1px 0px rgba(0,0,0,0.3), 0 0 6px 2px rgba(0,0,0,0.15);
+    }
+    #logo{
+      height: 48px;
+      width: 190px;
+      background-image: url(src/assets/LB_logo.png);
+      background-position: 80px 6px;
+      background-repeat: no-repeat;
+      background-size: 80px 27px;
+    }
+    #search{
+      height: 27px;
+      border: 1px solid #ccc;
+      background-color: #f2f2f5;
+      width: 468px;
+      background-image: url(src/assets/search.png);
+      background-repeat: no-repeat;
+      background-size: 27px 27px;
+      background-position: 432px 0px;
+    }
+    #homeLogo{
+      background-image: url(src/assets/home.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 27px 27px;
+      width: 27px;
+      height: 27px;
+      display: inline-block;
+    }
+    #videoLogo{
+      background-image: url(src/assets/video.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 27px 27px;
+      width: 27px;
+      height: 27px;
+      display: inline-block;
+    }
+    #discoverLogo{
+      background-image: url(src/assets/discover.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 27px 27px;
+      width: 27px;
+      height: 27px;
+      display: inline-block;
+    }
+    #gameLogo{
+      background-image: url(src/assets/game.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 27px 27px;
+      width: 27px;
+      height: 27px;
+      display: inline-block;
+    }
+    #linkSpan{
+      height: 48px;
+      line-height: 60px;
+      flex-grow: 1;
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 50px;
+    }
+    #linkSpan a.subTitle{
+      padding-left: 26px;
+    }
+    #homeLogoText,#videoLogoText,#discoverLogoText,#gameLogoText{
+      bottom: 5px;
+      position: relative;
+    }
+    #log a{
+      bottom: 5px;
+      position: relative;
+    }
+    #login{
+      padding-left: 24px;
+      padding-right: 12px;
+      border-right: 1px solid #d9d9d9;
+    }
+    #logout{
+      padding-left: 12px;
+      padding-right: 24px;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <span id="logo"></span>
+  <span>
+    <input type="search" id="search">
+  </span>
+  <span id="linkSpan">
+    <a class="subTitle">
+      <span id="homeLogo"></span>
+      <span id="homeLogoText">首页</span>
+    </a>
+    <a class="subTitle">
+      <span id="videoLogo"></span>
+      <span id="videoLogoText">视频</span>
+    </a>
+    <a class="subTitle">
+      <span id="discoverLogo"></span>
+      <span id="discoverLogoText">发现</span>
+    </a>
+    <a class="subTitle">
+      <span id="gameLogo"></span>
+      <span id="gameLogoText">游戏</span>
+    </a>
+    <span id="log">
+      <a id="login"><span>注册</span></a>
+      <a id="logout"><span>登陆</span></a>
+    </span>
+  </span>
+</header>
+</body>
+</html>
